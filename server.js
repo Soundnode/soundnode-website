@@ -6,11 +6,11 @@ var express = require('express')
     , port = process.env.PORT || 3000
     , router = express.Router();
 
-app.use(express.static(__dirname + '/views')); // set the static files location for the static html
-app.use(express.static(__dirname + '/public')); // set the static files location /public/img will be /img for users
-app.use(morgan('dev'));                     // log every request to the console
-app.use(bodyParser());                      // pull information from html in POST
-app.use(methodOverride());                  // simulate DELETE and PUT
+app.use(express.static(__dirname + '/views'));
+app.use(express.static(__dirname + '/public'));
+app.use(morgan('dev'));
+app.use(bodyParser());
+app.use(methodOverride());
 
 router.get('/', function(req, res, next) {
     res.render('index.html');
