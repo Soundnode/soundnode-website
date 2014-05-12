@@ -1,0 +1,21 @@
+{
+  "name": "Soundnode-app-site",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.1.1",
+    "morgan": "^1.0.0",
+    "body-parser": "^1.0.2",
+    "method-override": "^1.0.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.0",
+    "nodemon": "^1.0.17"
+  }
+}
