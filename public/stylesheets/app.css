@@ -1,0 +1,234 @@
+/* ==========================================================================
+@Defaults
+========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    font: 62.5% 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+/* ==========================================================================
+@View state
+========================================================================== */
+.viewState {
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.viewState[data-isVisible="true"] {
+    opacity: 1;
+}
+.viewState[data-isVisible="false"] {
+    opacity: 0;
+}
+
+/* ==========================================================================
+@Container
+========================================================================== */
+.container, 
+.container:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.container {
+    background: url(../images/img2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container:after {
+    content: '';
+    background: transparent url(../images/pattern.png) repeat top left;
+}
+
+.container_outter {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+}
+
+/* ==========================================================================
+@Header
+========================================================================== */
+.header {
+    width: 100%;
+    background: #fff;
+    height: 50px;
+    border-bottom: 1px solid #F0DFDC;
+    box-shadow: 0 0 5px #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    float: left;
+}
+
+.nav {
+    float: right;
+    color: #333;
+}
+
+.menu_item a {
+    display: block;
+    font-size: 26px;
+}
+
+/* ==========================================================================
+@Main
+========================================================================== */
+.main {
+    width: 900px;
+    position: absolute;
+    height: 250px;
+    top: 50%;
+    margin: -125px 0 0 -450px;
+    left: 50%;
+}
+
+/* highlight */
+.highlight {
+    text-align: center;
+    font-size: 72px;
+    text-shadow: 0 0 5px #fff;
+}
+
+.highlight.animate {
+    -webkit-animation: intro 2s ease;
+    -moz-animation: intro 2s ease;
+    -ms-animation: intro 2s ease;
+    animation: intro 2s ease;
+}
+
+@-webkit-keyframes intro {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-moz-keyframes intro {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-ms-keyframes intro {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes intro {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+.platformSupport {
+    display: block;
+    font-size: 16px;
+    text-shadow: none;
+}
+
+
+/* button */
+.button {
+    background: rgb(211, 84, 0);
+    border-bottom: 2px solid rgb(197, 78, 0);
+    box-shadow: rgb(197, 78, 0) 0px -2px 0px 0px inset;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 60px;
+    letter-spacing: normal;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    line-height: 57px;
+    margin: 50px auto;
+    font-weight: lighter;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #fff;
+}
+
+/* ==========================================================================
+@Loader
+========================================================================== */
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -16px 0 0 -16px;
+    width: 32px;
+    height: 32px;
+}
+
+/* ==========================================================================
+@Footer
+========================================================================== */
+.footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 14px;
+}
+.footer i {
+    color: #d35400;
+}
+.footer a {
+    color: #fff;
+}
+
+
+
