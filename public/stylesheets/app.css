@@ -200,11 +200,15 @@ li {
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
     transition: all .5s ease;
-    line-height: 57px;
     margin: 10px 20px;
     font-weight: lighter;
     border-radius: 5px;
     text-shadow: 0 0 5px #fff;
+    padding: 10px 0;
+}
+.button small {
+  font-size: 12px;
+  display: block;
 }
 
 /* ==========================================================================
