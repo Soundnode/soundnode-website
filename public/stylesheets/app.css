@@ -10,7 +10,7 @@
     padding: 0;
 }
 
-html, 
+html,
 body {
     height: 100%;
 }
@@ -50,7 +50,7 @@ li {
 /* ==========================================================================
 @Container
 ========================================================================== */
-.container, 
+.container,
 .container:after {
     position: fixed;
     width: 100%;
@@ -179,24 +179,29 @@ li {
 }
 
 
-/* button */
+/* buttons */
+.buttons {
+  width: 550px;
+  margin: 50px auto 0;
+}
+
 .button {
     background: rgb(211, 84, 0);
     border-bottom: 2px solid rgb(197, 78, 0);
     box-shadow: rgb(197, 78, 0) 0px -2px 0px 0px inset;
     color: #fff;
-    display: block;
+    display: inline-block;
     font-size: 20px;
-    height: 60px;
+    min-height: 60px;
     letter-spacing: normal;
     position: relative;
     text-align: center;
-    width: 300px;
+    width: 230px;
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
     transition: all .5s ease;
     line-height: 57px;
-    margin: 50px auto;
+    margin: 10px 20px;
     font-weight: lighter;
     border-radius: 5px;
     text-shadow: 0 0 5px #fff;
@@ -232,6 +237,3 @@ li {
 .footer a {
     color: #fff;
 }
-
-
-
