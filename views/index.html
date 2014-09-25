@@ -4,18 +4,18 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Soundnode - The Soundcloud desktop application for Windows/Mac</title>
+    <title>Soundnode - The Soundcloud desktop application for download Windows/Mac</title>
 
     <!-- metas -->
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Soundnode - The Soundcloud for desktop">
+    <meta name="description" content="Soundnode - The Soundcloud desktop application for download Windows/Mac">
 
-    <meta property="og:title" content="Soundnode - The Soundcloud for desktop">
+    <meta property="og:title" content="Soundnode - The Soundcloud desktop application for download Windows/Mac">
     <meta property="og:site_name" content="Soundnode App">
     <meta property="og:url" content="http://www.soundnodeapp.com">
     <meta property="og:image" content="http://www.soundnodeapp.com/images/fbog.png">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Soundnode - The Soundcloud for desktop">
+    <meta property="og:description" content="Soundnode - The Soundcloud desktop application for download Windows/Mac">
 
 	<!-- STYLES -->
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
@@ -26,61 +26,7 @@
 
     <!-- preload assets -->
     <script src="javascripts/lib/imagespreloader.min.js"></script>
-    <script>
-    ;(function(window, undefined) {
-        var images = [
-            'images/img1.jpg',
-            'images/img2.jpg',
-            'images/img3.jpg',
-            'images/img4.jpg'
-        ];
-
-        preloadimages(images).done(function(images){
-            var elViews = document.querySelectorAll('.viewState')
-                , elContainer = document.querySelector('.container');
-
-            document.getElementById('loader').remove();
-
-            for ( var i = 0; i < elViews.length; i++ ) {
-                if ( elViews[i].getAttribute('data-isVisible') === 'true' ) {
-                    elViews[i].setAttribute('data-isVisible', 'false');
-                } else {
-                    elViews[i].setAttribute('data-isVisible', 'true');
-                }
-            }
-
-            document.querySelector('.highlight').classList.add('animate');
-
-            // quick solution for background slideshow
-            window.setInterval(function() {
-                var currentSlide = elContainer.getAttribute('data-currentSlide');
-
-                elContainer.setAttribute('data-isVisible', 'false');
-
-                if ( currentSlide === '1' ) {
-                    elContainer.setAttribute('style', 'background-image: url(../images/img2.jpg)');
-                    elContainer.setAttribute('data-currentSlide', '2')
-                } else if ( currentSlide === '2' ) {
-                    elContainer.setAttribute('style', 'background-image: url(../images/img3.jpg)');
-                    elContainer.setAttribute('data-currentSlide', '3');
-                } else if ( currentSlide === '3' ) {
-                    elContainer.setAttribute('style', 'background-image: url(../images/img4.jpg)');
-                    elContainer.setAttribute('data-currentSlide', '4');
-                } else if ( currentSlide === '4' ) {
-                    elContainer.setAttribute('style', 'background-image: url(../images/img1.jpg)');
-                    elContainer.setAttribute('data-currentSlide', '1');
-                }
-
-                window.setTimeout(function() {
-                    elContainer.setAttribute('data-isVisible', 'true');
-                }, 2500)
-
-
-            }, 8000)
-
-        });
-    })(window);
-    </script>
+    <script src="javascripts/app.js"></script>
 
 </head>
 <body>
@@ -100,7 +46,7 @@
         <header class="header">
             <a class="logo" href="/" title="Soundnode - The Sooundcloud desktop application for Windows/Mac">
                 <img src="../images/logo.120.png">
-								<strong>V0.3.0</strong>
+								<strong>V0.4.0</strong>
             </a>
 
             <nav class="nav">
@@ -121,15 +67,31 @@
 
             <div class="buttons">
             		<a href="http://goo.gl/Y46Hn8" class="button" title="Download Soundnode App - The Soundcloud for desktop Windows">Windows download
-									<i class="fa fa-windows"></i> <small>size 25mb</small> </a>
-								<a href="http://goo.gl/wDlo2c" class="button" title="Download Soundnode App - The Soundcloud for desktop Mac">Mac download
-									<i class="fa fa-apple"></i> <small>size 30mb</small> </a>
+					   <i class="fa fa-windows"></i> <small>size 25mb</small>
+                    </a>
+					<a href="http://goo.gl/wDlo2c" class="button" title="Download Soundnode App - The Soundcloud for desktop Mac">Mac download
+						<i class="fa fa-apple"></i> <small>size 74mb</small>
+                    </a>
             </div>
-        </div>
+            <div class="features">
+                <h3 class="features_title">Features</h3>
+                <ul class="features_list">
+                    <li class="features_list_item">- No need to install</li>
+                    <li class="features_list_item">- Native media keyboard shortcuts</li>
+                    <li class="features_list_item">- Desktop song notification</li>
+                    <li class="features_list_item">- Back/Forward navigation</li>
+                    <li class="features_list_item">- Listen to songs from your Streams, Likes, Tracks or Playlists</li>
+                    <li class="features_list_item">- Save songs to your Like playlist</li>
+                    <li class="features_list_item">- Search for songs</li>
+                    <li class="features_list_item">- Automatic notification for update</li>
+                </ul>
+            </div>
 
-        <footer class="footer">
-            <small>Made with <i class="fa fa-heart"></i> by <a href="http://bymichaellancaster.com" title="Soundnode was built with love by Michael Lancaster" target="_blank">Michael Lancaster</a> - Copyright 2014</small>
-        </footer>
+            <footer class="footer">
+                <small>Made with <i class="fa fa-heart"></i> by <a href="http://bymichaellancaster.com" title="Soundnode was built with love by Michael Lancaster" target="_blank">Michael Lancaster</a> - Copyright 2014</small>
+            </footer>
+
+        </div>
     </div>
 
 <script>
