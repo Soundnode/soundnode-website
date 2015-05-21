@@ -32,63 +32,18 @@ li {
 }
 
 /* ==========================================================================
-@View state
-========================================================================== */
-.viewState {
-    -moz-transition: all 1.5s ease;
-    -ms-transition: all 1.5s ease;
-    transition: all 1.5s ease;
-}
-
-.viewState[data-isVisible="true"] {
-    opacity: 1;
-}
-.viewState[data-isVisible="false"] {
-    opacity: 0;
-}
-
-/* ==========================================================================
 @Container
 ========================================================================== */
-.container,
-.container:after {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 0;
-}
 
-.container {
-    background: url(../images/img1.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.container:after {
-    content: '';
-    background: transparent url(../images/pattern.png) repeat top left;
-}
-
-.container_outter {
-    position: relative;
-    z-index: 5;
-    height: 100%;
-}
 
 /* ==========================================================================
 @Header
 ========================================================================== */
 .header {
     width: 100%;
-    background: #fff;
     height: 80px;
-    border-bottom: 1px solid #F0DFDC;
-    box-shadow: 0 0 5px #fff;
-    padding: 10px 20px;
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px 10%;
 }
 
 .logo {
@@ -98,43 +53,39 @@ li {
 .nav {
     float: right;
     color: #333;
+    margin-top: 10px;
 }
 
-.menu_item a {
-    display: block;
+.menu_item {
+    display: inline-block;
+    font-size: 18px;
+}
+.menu_item.gh {
     font-size: 26px;
+    margin: 0 0 0 10px;
 }
 
 /* ==========================================================================
 @Main
 ========================================================================== */
-.main {
-    width: 900px;
-    position: absolute;
-    height: 250px;
-    top: 40%;
-    margin: -125px 0 0 -450px;
-    left: 50%;
-}
-
-/* highlight */
-.highlight {
-    text-align: center;
-    font-size: 72px;
-    text-shadow: 0 0 5px #fff;
-}
-
-.highlight.animate {
+.soundnode {
+    position: relative;
+    width: 100%;
+    margin: 40px auto 0px;
     -webkit-animation: intro 2s ease;
     -moz-animation: intro 2s ease;
     -ms-animation: intro 2s ease;
     animation: intro 2s ease;
 }
 
+.soundnode_screenshot {
+    max-width: 100%;
+}
+
 @-webkit-keyframes intro {
     0%{
         opacity: 0;
-        -webkit-transform: translateY(-80px);
+        -webkit-transform: translateY(80px);
     }
     100%{
         opacity: 1;
@@ -144,7 +95,7 @@ li {
 @-moz-keyframes intro {
     0%{
         opacity: 0;
-        -webkit-transform: translateY(-80px);
+        -webkit-transform: translateY(80px);
     }
     100%{
         opacity: 1;
@@ -154,7 +105,7 @@ li {
 @-ms-keyframes intro {
     0%{
         opacity: 0;
-        -webkit-transform: translateY(-80px);
+        -webkit-transform: translateY(80px);
     }
     100%{
         opacity: 1;
@@ -164,7 +115,7 @@ li {
 @keyframes intro {
     0%{
         opacity: 0;
-        -webkit-transform: translateY(-80px);
+        -webkit-transform: translateY(80px);
     }
     100%{
         opacity: 1;
@@ -172,17 +123,10 @@ li {
     }
 }
 
-.platformSupport {
-    display: block;
-    font-size: 16px;
-    text-shadow: none;
-}
-
-
 /* buttons */
 .buttons {
   width: 550px;
-  margin: 50px auto 0;
+  margin: 0 auto 100px;
 }
 
 .button {
@@ -211,43 +155,6 @@ li {
   display: block;
 }
 
-/* ==========================================================================
-@Features
-========================================================================== */
-.features {
-    background: rgba(255, 255, 255, .9);
-    padding: 20px;
-    color: #333;
-    width: 500px;
-    margin: 50px auto 100px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #fff;
-}
-.features_title {
-    font-size: 26px;
-}
-.features_list {
-    padding: 20px 0px 20px 15px;
-}
-.features_list_item {
-    margin: 0 0 10px 0;
-    font-size: 18px;
-}
-.features_list_item:last-child {
-    margin: 0;
-}
-
-/* ==========================================================================
-@Loader
-========================================================================== */
-#loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -16px 0 0 -16px;
-    width: 32px;
-    height: 32px;
-}
 
 /* ==========================================================================
 @Footer
@@ -256,10 +163,8 @@ li {
     text-align: center;
     padding: 5px;
     font-size: 14px;
+    color: #333;
 }
 .footer i {
     color: #d35400;
-}
-.footer a {
-    color: #fff;
 }

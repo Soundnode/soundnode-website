@@ -4,13 +4,13 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Soundcloud for desktop Windows/Mac</title>
+    <title>Soundcloud for desktop Windows/Mac. No need to install and media keyboard support</title>
 
     <!-- metas -->
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Soundcloud for desktop Windows/Mac">
+    <meta name="description" content="Download Soundcloud for desktop Windows/Mac, no need to install and native media keyboard available">
 
-    <meta property="og:title" content="Soundcloud for desktop Windows/Mac">
+    <meta property="og:title" content="Download Soundcloud for desktop Windows/Mac, no need to install and native media keyboard available">
     <meta property="og:site_name" content="Soundnode App">
     <meta property="og:url" content="http://www.soundnodeapp.com">
     <meta property="og:image" content="http://www.soundnodeapp.com/images/fbog.png">
@@ -24,75 +24,48 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="stylesheets/app.css">
 
-    <!-- preload assets -->
-    <script src="javascripts/lib/imagespreloader.min.js"></script>
-    <script src="javascripts/app.js"></script>
-
 </head>
 <body>
+    
+    <header class="header">
+        <a class="logo" href="/" title="Soundnode - Soundcloud for desktop Windows/Mac">
+            <img src="../images/logo.120.png" alt="Soundnode App - Soundnode for desktop Windows and Mac">
+            <strong>v0.5.3</strong>
+        </a>
 
-    <!-- loader -->
-    <div id="loader" class="viewState" data-isVisible="true">
-        <img src="images/loading3.gif" alt="loading Soundnode - Soundcloud for Desktop">
-    </div>
-    <!-- loader / end -->
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="https://github.com/Soundnode/soundnode-app/blob/master/README.md" target="_blank" title="about soundnode the soundcliud for desktop windows and Mac">About</a>
+                </li>
+                <li class="menu_item gh">
+                    <a href="https://github.com/Soundnode/soundnode-app.git" target="_blank" title="Contribute with Soundnode on Github"><i class="fa fa-github-square"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- background view -->
-    <div class="container viewState" data-isVisible="false" data-currentSlide="1">
+    <div class="soundnode">
+        <img src="../images/soundnode-app.png" class="soundnode_screenshot">
     </div>
     <!-- background view / end -->
-
-    <div class="container_outter viewState" data-isVisible="false">
-        <header class="header">
-            <a class="logo" href="/" title="Soundnode - Soundcloud for desktop Windows/Mac">
-                <img src="../images/logo.120.png">
-								<strong>v0.5.2</strong>
+    
+    <!-- main content -->
+    <div class="main">
+        <div class="buttons">
+            <a href="http://goo.gl/Y46Hn8" class="button" title="Download Soundcloud for desktop Windows/Mac">Windows download
+               <i class="fa fa-windows"></i> <small>size 26mb</small>
             </a>
-
-            <nav class="nav">
-                <ul class="menu">
-                    <li class="menu_item">
-                        <a href="https://github.com/Soundnode/soundnode-app.git" target="_blank" title="Contribute with Soundnode on Github"><i class="fa fa-github-square"></i></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="main">
-            <h2 class="highlight">
-                Soundcloud for desktop.
-                <br>
-                <small class="platformSupport">(Beta release)</small>
-            </h2>
-
-            <div class="buttons">
-            		<a href="http://goo.gl/Y46Hn8" class="button" title="Download Soundcloud for desktop Windows/Mac">Windows download
-					   <i class="fa fa-windows"></i> <small>size 26mb</small>
-                    </a>
-					<a href="http://goo.gl/wDlo2c" class="button" title="Download Soundcloud for desktop Windows/Mac">Mac download
-						<i class="fa fa-apple"></i> <small>size 30mb</small>
-                    </a>
-            </div>
-            <div class="features">
-                <h3 class="features_title">Features</h3>
-                <ul class="features_list">
-                    <li class="features_list_item">- No need to install</li>
-                    <li class="features_list_item">- Native media keyboard shortcuts</li>
-                    <li class="features_list_item">- Search for new songs</li>
-                    <li class="features_list_item">- Easy navigation</li>
-                    <li class="features_list_item">- Listen to songs from your Stream, Likes, Tracks, Following or Playlists</li>
-                    <li class="features_list_item">- Like songs and save to your liked playlist</li>
-                    <li class="features_list_item">- Full playlist feature</li>
-                    <li class="features_list_item">- Follow/Unfollow users</li>
-                </ul>
-                <h3 class="features_title">And much more...</h3>
-            </div>
-
-            <footer class="footer">
-                <small>Built with <i class="fa fa-heart"></i> by <a href="http://bymichaellancaster.com" title="Soundnode was built with love by Michael Lancaster" target="_blank">Michael Lancaster</a> - Copyright 2014</small>
-            </footer>
-
+            <a href="http://goo.gl/wDlo2c" class="button" title="Download Soundcloud for desktop Windows/Mac">Mac download
+                <i class="fa fa-apple"></i> <small>size 30mb</small>
+            </a>
         </div>
+
+        <footer class="footer">
+            <small>Built with <i class="fa fa-heart"></i> by <a href="http://bymichaellancaster.com" title="Soundnode was built with love by Michael Lancaster" target="_blank">Michael Lancaster</a> - Copyright 2015</small>
+        </footer>
+
     </div>
 
 <script>
