@@ -82,6 +82,61 @@ li {
     max-width: 100%;
 }
 
+/* buttons */
+.buttons {
+  width: 550px;
+  margin: 0 auto 100px;
+}
+
+.button {
+    background: rgb(211, 84, 0);
+    border-bottom: 2px solid rgb(197, 78, 0);
+    box-shadow: rgb(197, 78, 0) 0px -2px 0px 0px inset;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    min-height: 60px;
+    letter-spacing: normal;
+    position: relative;
+    text-align: center;
+    width: 230px;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    margin: 10px 20px;
+    font-weight: lighter;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #fff;
+    padding: 10px 0;
+    -webkit-animation: intro 2s ease;
+    -moz-animation: intro 2s ease;
+    -ms-animation: intro 2s ease;
+    animation: intro 2s ease;
+}
+.button small {
+  font-size: 12px;
+  display: block;
+}
+
+
+/* ==========================================================================
+@Footer
+========================================================================== */
+.footer {
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    color: #333;
+}
+.footer i {
+    color: #d35400;
+}
+
+
+/* ==========================================================================
+@FX
+========================================================================== */
+
 @-webkit-keyframes intro {
     0%{
         opacity: 0;
@@ -121,50 +176,4 @@ li {
         opacity: 1;
         -webkit-transform: translateY(0);
     }
-}
-
-/* buttons */
-.buttons {
-  width: 550px;
-  margin: 0 auto 100px;
-}
-
-.button {
-    background: rgb(211, 84, 0);
-    border-bottom: 2px solid rgb(197, 78, 0);
-    box-shadow: rgb(197, 78, 0) 0px -2px 0px 0px inset;
-    color: #fff;
-    display: inline-block;
-    font-size: 20px;
-    min-height: 60px;
-    letter-spacing: normal;
-    position: relative;
-    text-align: center;
-    width: 230px;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
-    margin: 10px 20px;
-    font-weight: lighter;
-    border-radius: 5px;
-    text-shadow: 0 0 5px #fff;
-    padding: 10px 0;
-}
-.button small {
-  font-size: 12px;
-  display: block;
-}
-
-
-/* ==========================================================================
-@Footer
-========================================================================== */
-.footer {
-    text-align: center;
-    padding: 5px;
-    font-size: 14px;
-    color: #333;
-}
-.footer i {
-    color: #d35400;
 }
