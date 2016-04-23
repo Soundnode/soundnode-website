@@ -7,6 +7,7 @@ var babel = require('gulp-babel'),
     imagemin = require('gulp-imagemin'),
     postcss = require('gulp-postcss'),
     rename = require('gulp-rename'),
+    sharp = require('gulp-sharp'),
     stylus = require('gulp-stylus'),
     uglify = require('gulp-uglify')
 
@@ -28,6 +29,13 @@ gulp.task('js', function() {
 })
 
 gulp.task('img', function() {
+  var resolutions = [1200, 992, 768]
+  resolutions.forEach(function(resolution) {
+    gulp.src('img/screenshot.png')
+    .pipe(sharp({resize: [resolution]}))
+    .pipe(rename('screenshot-' + resolution + '.png'))
+    .pipe(gulp.dest('../static/assets/img'))
+  })
   gulp.src('img/*')
   .pipe(imagemin())
   .pipe(gulp.dest('../static/assets/img'))
