@@ -1,24 +1,11 @@
-var express = require('express')
-    , morgan = require('morgan')
-    , compression = require('compression')
-    , bodyParser = require('body-parser')
-    , methodOverride = require('method-override')
-    , app = express()
-    , port = process.env.PORT || 4000
-    , router = express.Router();
+var express = require('express'),
+    shrinkRay = require('shrink-ray'),
+    app = express(),
+    port = process.env.PORT || 4000
 
-app.use(express.static(__dirname + '/views'));
-app.use(express.static(__dirname + '/public'));
-app.use(compression());
-app.use(morgan('dev'));
-app.use(bodyParser());
-app.use(methodOverride());
+app.use(shrinkRay())
+app.use(express.static(__dirname + '/static'))
 
-router.get('/', function(req, res, next) {
-    res.render('index.html');
-});
-
-app.use('/', router);
-
-app.listen(port);
-console.log('App running on port', port);
+app.listen(port, function () {
+  console.log('App listening on port ' + port + '...')
+})
