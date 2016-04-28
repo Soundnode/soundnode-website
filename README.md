@@ -1,4 +1,4 @@
-soundnode-app-site
+soundnode-website
 ==================
 
 Website for Soundnode App
